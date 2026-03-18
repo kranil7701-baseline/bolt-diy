@@ -16,6 +16,9 @@ export default defineConfig((config) => {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
+    server: {
+      allowedHosts: ['bolt-diy-production-6746.up.railway.app'],
+    },
     build: {
       target: 'esnext',
     },
